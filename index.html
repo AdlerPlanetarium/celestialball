@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset=utf-8>
+    <title>Adler Celestial Ball</title>
+    <link rel="stylesheet" href="styles/style.css" type="text/css">
+    <link rel="stylesheet" href="styles/leaflet.css" type="text/css">
+    <META NAME="ROBOTS" CONTENT="NOINDEX, NOARCHIVE">
+    <!--[if lt IE 9]>
+			<script src="lib/html5shiv.js"></script>
+			<link rel="stylesheet" type="text/css" href="/styles/leaflet.ie.css">
+		<![endif]-->
+
+    <script type="text/javascript" src="lib/leaflet-src.js"></script>
+    <script type="text/javascript" src="lib/jquery-1.9.1.min.js"></script>
+    <script type="text/javascript" src="lib/galleria-1.2.9.min.js"></script>
+    <script type="text/javascript" src="lib/app.js"></script>
+
+</head>
+
+<body>
+    <div id="backgrounds">
+        <div class='stars' data-speed=0.5></div>
+        <div class='moon' data-speed=0.8></div>
+        <div class='saturn' data-speed=0.85></div>
+        <div class='earth' data-speed=0.95></div>
+        <div class='mars' data-speed=0.8></div>
+        <div class='jupiter' data-speed=1.13></div>
+    </div>
+    <div id="header">
+        <img src='images/adlerWordmark.png'></img>
+    </div>
+	<div id="content">
+        <img class='logo' src='images/logo.png'></img>
+        <section id="intro">
+            <h1>2013 Celestial Ball</h1>
+            <h2 class='bottom-line'>Hosted by the Women's Board of the Adler Planetarium</h2>
+            <p>The Adler Planetarium’s annual black-tie gala will be held against the stunning backdrop of Chicago’s skyline and Lake Michigan at night. The Celestial Ball is attended by more than 600 business, civic, and philanthropic leaders and raises more than $1 million for the Adler’s STEM education programs. Guests will enjoy cocktails, fine cuisine, and dancing. Our highly anticipated event will be an elegant evening and a highlight of the autumn season.</p>
+        </section>
+        <section id="Schedule">
+            <h1>Schedule</h1>
+            <h2 class='bottom-line'>Saturday September 7, 2013 6:00 PM - Midnight</h2>
+            <ul>    
+                <li>
+                    <p class='time'>6:00 PM</p>
+                    <p class='event'>Reception and Silent Auction</p>
+                </li>
+                <li>
+                    <p class='time'>8:00 PM</p>
+                    <p class='event'>Dinner and Dancing</p>
+                </li>
+            </ul>
+        </section>
+        <section id="womans-board">
+            <h1 class='bottom-line'>The Women's Board</h1>
+            <ul class='columns'>
+                <li>Nancy A. Temple <p class='role'>President</p></li>
+                <li>Linda I. Celesia <p class='role'>Founder</p></li>
+                <li>Elisa Primavera-Bailey <p class='role'>Celestial Ball Chair</p></li>
+                <li>Donna Beering<p class='role'>Celestial Ball Co-Chair</p></li>
+                <li>Linda Ieleja Gerstman<p class='role'>Celestial Ball Co-Chair</p></li>
+                <li>Cynthia L. Ballew</li>
+                <li>Erika Lautman Bartelstein</li>
+                <li>Carolyn Berg</li>
+                <li>Sherry Schmitter Block</li>
+                <li>Kate Boege</li>
+                <li>Amanda Bonnell</li>
+                <li>Jennifer Burnette</li>
+                <li>Terri L. Cable</li>
+                <li>Rebecca Childers Caleel</li>
+                <li>Vera Clark</li>
+                <li>Elaine D. Cottey</li>
+                <li>Loli DiSanto</li>
+                <li>Susan V. Downing</li>
+                <li>Yasmina Duwe</li>
+                <li>Sarah M. Fritz</li>
+                <li>Mel Cooney Higgins</li>
+                <li>Katherine C. Hunt</li>
+                <li>Caroline Becker Joss</li>
+                <li>Lisa Jozwiak</li>
+                <li>Mary Ann Karris</li>
+                <li>Marie E. Kipp</li>
+                <li>Naomi Knappenberger, PhD</li>
+                <li>Adrienne Kolb</li>
+                <li>Lisa H. Lewis</li>
+                <li>Susan K. Lovell</li>
+                <li>Carlette McMullan</li>
+                <li>Theresa Montes</li>
+                <li>Donna More</li>
+                <li>Laura Myntti</li>
+                <li>Penelope J. Obenshain</li>
+                <li>Pamela Paziotopoulos</li>
+                <li>Pamela Pohl</li>
+                <li>Meg Prendergast</li>
+                <li>Meg Sauer</li>
+                <li>Mihra Seta</li>
+                <li>Robyn Sexton</li>
+                <li>Tanya R. Silvio</li>
+                <li>Orli D. Staley</li>
+                <li>Michelle Vanderlaan</li>
+            </ul>
+        </section>
+
+         <section id="participate">
+            <h1> Participate</h1>
+            <h2 class='bottom-line' >There are several opportunities to participate in the Celestial Ball: </h2>
+            <ul>
+                <li><span class='cash'>$600</span> Individual Reservation</li>
+                <li><span class='cash'>$6,000</span> Nova</li>
+                <li><span class='cash'>$12,000</span> Supernova</li>
+                <li><span class='cash'>$25,000</span> Quasar</li>
+                <li><span class='cash'>$50,000</span> Galaxy</li>
+            </ul>
+        </section>
+        <section id="sponsors">
+            <p>We gratefully acknowledge our lead event sponsors:</p>
+            <div class='logos'>
+                <img src='/images/logos/logoChase.png'></img>
+                <img src='/images/logos/logoJPMorgan.png'></img>
+                <img src='/images/logos/logoBoeing.png'></img>
+                <img src='/images/logos/logoITW.png'></img>
+                <img src='/images/logos/logoMOtorola.png'></img>
+                <img src='/images/logos/logoSCElectric.png'></img>
+                <img src='/images/logos/logoUnited.png'></img>
+            </div>
+        </section>
+
+        <section id='photo-gal'>
+            <h1 class='bottom-line'> 2012 Photo Gallery</h1>
+            
+            <div id="galleria">
+                <img src="/images/2012Pics/photo1.jpg" />
+                <img src="/images/2012Pics/photo2.jpg" />
+                <img src="/images/2012Pics/photo3.jpg" />
+                <img src="/images/2012Pics/photo4.jpg" />
+                <img src="/images/2012Pics/photo5.jpg" />
+            </div>
+
+        </section>
+
+        <section id="general_info">
+            <h1 class='bottom-line'> General Information</h1>
+            <div id='map'></div>
+            <div class='details'>
+                <p class='top'>Black Tie<br />
+                Complimentary valet available
+                </p>
+                <p class='mid'>
+                    To learn more please contact Livia McCormick at 312.553.2000 or <a href='mailto:lmccormick@pjhchicago.com'>lmccormick@pjhchicago.com</a>
+                </p>
+                <p class='mid'>
+                    or visit <a target='_blank' href='http://www.pjhchicago.com/event/adler'>www.pjhchicago.com/Adler</a>
+                </p>
+            </div>
+
+        </section>
+    </div>
+    <footer>
+        <div class='inner'>
+            <img src='images/adlerLogo.png'></img>
+            <div class='address'>
+                Adler Planetarium <br />
+                1300 South Lake Shore Drive <br />
+                Chicago, IL 60605 <br />
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
+
+
