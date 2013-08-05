@@ -20,23 +20,21 @@ $ ->
     iconRetinaUrl: 'images/marker-icon@2x.png'
     shadowUrl: 'images/marker-shadow.png'
                 
-
-  L.marker([41.866333,-87.606783], {icon:icon}).addTo(map);
+  L.marker([41.866333,-87.606783], {icon: icon}).addTo(map);
 
   $("#backgrounds div").each ->
     startingPosY = parseInt($(@).css("background-position").split(" ")[1])
-    $(@).attr("data-startingPosY", startingPosY)
+    $(@).attr "data-startingPosY", startingPosY
   
   $(window).scroll ->
     $("#backgrounds div").each ->
       speed = $(@).data().speed
     
       posY = $(@).data().startingposy
-      scroll = $(window).scrollTop()*speed
-      bpos = $(@).css('background-position') 
+      scroll = $(window).scrollTop() * speed
+      bpos = $(@).css 'background-position'
       bpos =  bpos.split(" ")[0] + " #{posY - scroll}px"
-      $(@).css('background-position',  bpos)
+      $(@).css 'background-position',  bpos
 
-  Galleria.loadTheme('lib/themes/classic/galleria.classic.min.js')
-  Galleria.run('#galleria')
-
+  Galleria.loadTheme 'lib/themes/classic/galleria.classic.min.js'
+  Galleria.run '#galleria'
