@@ -1,35 +1,31 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset=utf-8>
+    <meta charset="utf-8">
     <title>Adler Celestial Ball</title>
     <link rel="stylesheet" href="styles/style.css" type="text/css">
     <link rel="stylesheet" href="styles/leaflet.css" type="text/css">
     <META NAME="ROBOTS" CONTENT="NOINDEX, NOARCHIVE">
     <!--[if lt IE 9]>
-			<script src="lib/html5shiv.js"></script>
-			<link rel="stylesheet" type="text/css" href="/styles/leaflet.ie.css">
-		<![endif]-->
-
-    <script type="text/javascript" src="lib/leaflet-src.js"></script>
-    <script type="text/javascript" src="lib/jquery-1.9.1.min.js"></script>
-    <script type="text/javascript" src="lib/galleria-1.2.9.min.js"></script>
-    <script type="text/javascript" src="lib/app.js"></script>
-
+    	<script src="lib/html5shiv.js"></script>
+    	<link rel="stylesheet" type="text/css" href="/styles/leaflet.ie.css">
+    <![endif]-->
 </head>
 
 <body>
     <div id="backgrounds">
-        <div class='stars' data-speed=0.5></div>
-        <div class='moon' data-speed=0.8></div>
-        <div class='saturn' data-speed=0.85></div>
-        <div class='earth' data-speed=0.95></div>
-        <div class='mars' data-speed=0.8></div>
-        <div class='jupiter' data-speed=1.13></div>
+        <div class="stars" data-speed="0.5"></div>
+        <div class="jupiter" data-speed="1.13"></div>
+        <div class="saturn" data-speed="0.85"></div>
+        <div class="mars" data-speed="0.8"></div>
+        <div class="moon" data-speed="0.8"></div>
+        <div class="earth" data-speed="0.95"></div>
     </div>
+
     <div id="header">
         <img src='images/adlerWordmark.png'></img>
     </div>
+
 	<div id="content">
         <img class='logo' src='images/logo.png'></img>
         <section id="intro">
@@ -176,11 +172,11 @@
                     or visit <a target='_blank' href='http://www.pjhchicago.com/event/adler'>www.pjhchicago.com/Adler</a>
                 </p>
             </div>
-
         </section>
     </div>
-    <footer>
-        <div class='inner'>
+
+    <div class="footer">
+        <div class="inner">
             <img src='images/adlerLogo.png'></img>
             <div class='address'>
                 Adler Planetarium <br />
@@ -188,7 +184,12 @@
                 Chicago, IL 60605 <br />
             </div>
         </div>
-    </footer>
+    </div>
+
+    <script type="text/javascript" src="lib/leaflet-src.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script type="text/javascript" src="lib/galleria-1.2.9.min.js"></script>
+    <script type="text/javascript" src="lib/app.js"></script>
 </body>
 </html>
 
