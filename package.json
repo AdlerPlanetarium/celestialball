@@ -1,21 +1,16 @@
 {
-  "author": "Stuart Lynn",
-  "name": "GZConfSite",
+  "author": "Adler Web Team",
+  "name": "CelestialBall",
   "description": "",
-  "version": "0.0.1",
-  "homepage": "",
-  "repository": {
-    "type": "git",
-    "url": ""
-  },
-  
+  "version": "0.0.2",
   "dependencies": {
-    "coffee-script" : "*",
-    "stylus" : "*",
-    "nib"    : "*"
+    "nib": "*",   
+    "publisssh":  "^0.2.5",
+    "haw": "0.4.9"
   },
-  "devDependencies": {
-    "mocha": "0.14.0",
-    "expect.js": "0.1.2"
+  "scripts": {
+    "start": "haw serve --port 2014",
+    "deploy-to-staging": "haw build ./build --force && publisssh ./build test-celestialball.adlerplanetarium.org && rm -rf ./build",
+    "deploy-to-production": "haw build ./build --force && publisssh ./build celestialball.adlerplanetarium.org/2014 && rm -rf ./build"
   }
 }
