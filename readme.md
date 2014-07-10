@@ -4,7 +4,7 @@
 Documentation about the Celestial Ball micro-site
 
 ## Overview
-A microsite for the Celestial Ball charity event. It's a Adler mircosites
+A microsite for the Celestial Ball charity event. It's a typical Adler mircosites
 
 - It's a single page site with a minimum of scripting.
 - It's hosted on a Amazon S3 bucket
