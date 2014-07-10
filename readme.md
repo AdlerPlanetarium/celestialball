@@ -60,9 +60,3 @@ secret: process.env.ADLER_AWS_SECRET_ACCESS_KEY
 #### To deploy to the test site
 	 npm run deploy-to-staging
 	
- A footnote looks like this:
-
-That's some text with a footnote.[^1]
-
-[^1]: And that's the footnote.
-
