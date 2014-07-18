@@ -4,7 +4,7 @@
 Documentation about the Celestial Ball micro-site
 
 ## Overview
-A microsite for the Celestial Ball charity event. It's a Adler mircosites
+A microsite for the Celestial Ball charity event. It's a typical Adler mircosites
 
 - It's a single page site with a minimum of scripting.
 - It's hosted on a Amazon S3 bucket
@@ -60,9 +60,3 @@ secret: process.env.ADLER_AWS_SECRET_ACCESS_KEY
 #### To deploy to the test site
 	 npm run deploy-to-staging
 	
- A footnote looks like this:
-
-That's some text with a footnote.[^1]
-
-[^1]: And that's the footnote.
-
