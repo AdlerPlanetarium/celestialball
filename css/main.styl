@@ -1,30 +1,42 @@
 @import 'node_modules/nib/index'
 
-mustard_color= #a29061
-main_text_color= #d6d6d6
+yellow_color= #D2BE02
+/* main_text_color= #d6d6d6 */
+main_text_color = #FFF
 purple_text_color= #9d96ac
 main_background_color = #000D13
 border_color = #5E5871
 
+.cash
+  color: yellow_color
+
+div 
+  border: 1px solid blue !important
+
 html,body
   background-color: main_background_color 
   color: #00142f
-  text-align: center 
   padding: 0px
   margin:0px
   font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+  /* text-align: center */
 
 ul 
   margin: 0px 
   padding: 0px
+  list-style: none
+
 li 
   margin: 0px 
-  padding: 0px 
+  padding: 0px
+  display: inline 
+  color: main_text_color
 
 a 
   color: main_text_color
   text-decoration: none
 
+/*
 #backgrounds
   width: 100%
   z-index: 0
@@ -67,50 +79,68 @@ a
       background: url(./images/earth.png) 100% no-repeat
       background-position: -240px 2329px
 
-#header 
+  #header 
   width: 100% 
   height: 50px 
   background-color: black
   img
     float: left
-    margin:20px 0px 0px 40px
+    margin:20px 0px 0px 40px    
+
+*/
+
+#header
+  width: 100% 
+  margin: auto
+  position: relative
+
 
 #content
-  width: 830px 
+  width: 1000px 
+  margin:  auto 150px
+  /*
   margin-left:auto
   margin-right:auto
-  text-align: center
-  position:relative
+  text-align: center  
   transform: translate3d(0,0,0)
   -moz-transform: translate3d(0,0,0)
   -webkit-transform: translate3d(0,0,0)
   z-index: 1
+  */
+  position:relative
+
+
+  .left-column
+    width: 700px
+    float:left
+    
+  .right-column
+    float:right
+    width: 200px
+
+  .no-column
+    clear:both
+
   img.logo
     padding: 100px 0px 100px 0px 
 
   section
     box-sizing: border-box 
-    padding: 60px 85px 60px 85px
-    border-top: 1px solid border_color
+    /* padding: 60px 85px 60px 85px*/
+   
 
   h1 
-    font-size: 28px 
-    color: mustard_color
-    font-weight: 200
-  h2
-    font-style: italic 
+    font-size: 24px
+    color: yellow_color
+    
+  h2 
     font-size: 18px
-    color: purple_text_color  
-    font-weight: 200
+    color: yellow_color
 
-  .bottom-line:after
-    content: ""
-    display: block
-    height: 1px 
-    width: 150px
-    margin: 40px auto 40px auto 
-    background-color: border_color
-
+  h3 
+    font-size: 16px
+    color: white    
+ 
   p
     color: main_text_color
     line-height: 20px
@@ -120,26 +150,30 @@ a
   #intro 
     p
       text-align: left 
+ 
   #womans-board
-
+   
     ul.columns
       text-align: left
       color: main_text_color
       columns: 400px 3;
-      -webkit-columns:150px 3; /* Safari and Chrome */
-      -moz-columns:150px 3; /* Firefox */
+      -webkit-columns:150px 3; 
+      -moz-columns:150px 3;
       -webkit-column-gap:132px;
       -moz-column-gap:132px;
       column-gap:132px;
       font-size: 13px 
-      list-style: none
+      
       li
+        display: block 
         margin-bottom: 10px
         .role 
+          color: yellow_color
           font-weight: bold
           font-size: 13px
           margin-top: 0px 
-
+         
+  /*
   #Schedule 
     li
       margin-bottom: 50px
@@ -152,9 +186,8 @@ a
       .event 
         font-size: 16px
         margin-top: 0px
-        font-weight: 100
-
-
+  */
+  
   #map 
     width: 455px 
     height: 215px
@@ -234,7 +267,7 @@ a
 
 
 #galleria
-  width: 830px
+  width: 700px
   height: 500px
   margin: 0px
   padding: 0px
