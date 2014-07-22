@@ -6,13 +6,10 @@ main_text_color = #d6d6d6
 main_background_color = #000D13
 border_color = #5E5871
 
+medium_vertical_margin = 4.1em
+
 .cash
   color: yellow_color
-
-/*
-div 
-  border: 1px solid blue !important
-*/
 
 html,body
   border-top: 2px solid yellow_color;
@@ -51,12 +48,13 @@ a
 #header
   /*width: 100% 
   margin: auto*/
-  width: 1000px
+  max-width: 1000px
   margin-left:  auto 
   margin-right: auto
   position: relative
   height: 550px
   margin-bottom:150px
+  background: url(./images/cball-ader-building.png) no-repeat center
 
   img
     display: block
@@ -64,16 +62,8 @@ a
 
   img#logo
       padding-top: 125px
-
-  img#building
-      margin-left: -160px
-      margin-top: -150px    
-  
-    /*
-    #logo
-    opacity: 0.5;
-    background-image: url(./images/cball-ader-building.png) no-repeat
-    background-size: 540px;*/
+      opacity: 0.5;
+      
 
 #content
   width: 1000px 
@@ -83,9 +73,6 @@ a
   .no-column
     clear:both
 
- 
-  
-  
   section
     box-sizing: border-box 
     /* padding: 60px 85px 60px 85px*/
@@ -97,12 +84,17 @@ a
   h1 
     font-size: 24px
     color: yellow_color
+    font-weight: 300
+    letter-spacing: 4px
     line-height: 1.1
+
   h2 
     font-size: 18px
     color: yellow_color
     
   h2.white
+    font-weight: 300
+    letter-spacing: 4px
     color: white
       
   h3 
@@ -114,10 +106,13 @@ a
     line-height: 20px
     font-size: 16px
     line-height: 28px
-    font-weight: 200
+    font-weight: 300
+
+  .medium-vertical-margin
+      margin-top: medium_vertical_margin
+  
   #intro 
-    p
-      text-align: left 
+   
  
   #womans-board
    
@@ -223,7 +218,6 @@ a
       display: inline-block
       margin-left: 30px 
       line-height: 20px
-
 
 #galleria
   width: 700px
