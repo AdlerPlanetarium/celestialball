@@ -43,4 +43,8 @@ $ ->
   #       $(@).css 'background-position',  bpos
 
   Galleria.loadTheme 'lib/themes/classic/galleria.classic.min.js'
+  # galleryGonfiguration:
+  #     carousel: true
+  Galleria.configure  {carousel: true,  autoplay: 7000 }
+
   Galleria.run '#galleria'
