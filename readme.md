@@ -11,7 +11,7 @@ A microsite for the Celestial Ball charity event. It's a typical Adler mircosite
 - Soucecode and issue log on Github
 - A sub-domain on adlerplanetarium.org is pointed at this bucket
 	
-	**URL** [celestialball.adlerplanetarium.org](celestialball.adlerplanetarium.org)
+	**URL** [http://celestialball.adlerplanetarium.org](celestialball.adlerplanetarium.org)
 
 ## Where does stuff live?
 ### Test Site URL
