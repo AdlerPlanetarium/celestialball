@@ -1,20 +1,19 @@
 @import 'node_modules/nib/index'
 
-// variables 
 main_text_color = #d6d6d6
 main_background_color = #000D13
 yellow_color= #D2BE02
 
 medium_vertical_margin = 4.1em
 
-/* general */
 html,body
-  border-top: 2px solid yellow_color;
   background-color: main_background_color 
   color: main_text_color
-  padding: 0px
   margin:0px
   font-family: 'Lato', sans-serif
+
+body
+  border-top: 2px solid yellow_color
 
 ul 
   margin: 0px 
@@ -33,12 +32,12 @@ a
 
 
 .left-column
-  width: 700px
+  width: 70%
   float:left
   
 .right-column
   float:right
-  width: 200px
+  width: 20%
 
 .no-column
     clear:both
@@ -46,7 +45,9 @@ a
 .medium-vertical-margin
     margin-top: medium_vertical_margin
 
-  
+#wrapper
+  padding: 0px 150px
+
 #header
   max-width: 1000px
   margin-left:  auto 
@@ -65,17 +66,17 @@ a
 
 
 #content
-  width: 1000px 
+  max-width: 1000px 
   margin:  auto 
-  
+
   section
     box-sizing: border-box 
     margin-bottom: 100px
-  
+
   h1, h2, h2
     text-transform: uppercase
-    
-  h1 
+
+  h1
     font-size: 24px
     color: yellow_color
     font-weight: 300
@@ -93,7 +94,7 @@ a
       
   h3 
     font-size: 16px
-    color: white    
+    color: white
  
   p
     color: main_text_color
@@ -133,7 +134,7 @@ a
             padding-right: 2px
             &.active
               border: 2px solid yellow_color
-    
+
     #auction
       ul
         li
