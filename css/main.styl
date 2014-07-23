@@ -7,7 +7,7 @@ yellow_color= #D2BE02
 
 medium_vertical_margin = 4.1em
 
-// 
+/* general */
 html,body
   border-top: 2px solid yellow_color;
   background-color: main_background_color 
@@ -107,98 +107,100 @@ a
 
   .yellow
     color: yellow_color
-  
-  #photo-gal
-    #galleria
-      width: 700px
-      height: 500px
-      margin: 0px
-      padding: 0px
-      .galleria-stage
-        bottom: 97px
-      .galleria-carousel
-         height: 90px
-      .galleria-container
-        height: 87px
-        background-color: main_background_color
-      .galleria-counter
-        display: none !important
-      .galleria-thumbnails
-         .galleria-image
-          height: 87px 
-          width: 131px
-          padding-left: 2px
-          padding-right: 2px
-          &.active
-            border: 2px solid yellow_color
-  
-  #auction
-    ul
-      li
-        width: 24%
-        img
-           border-radius: 75px;
-        .auction-item
-          padding-left:  5px
-          padding-right: 5px
-        h4.auction-item-name
-          color: yellow_color
-        .auction-item-description
-          font-size: 75%
-          line-height: 120%
 
-  #support
-    ul  
-      li
-        width: 33%
-
-  #sponsors
-    padding: 40px 0px 40px 0px
-    p
-      font-style: italic
-      color: #9d96ac
-      font-size: 15px
-    .logos
-      div
-        display: inline-block
-
-        width: 24%
-        img
-          display: inline-block
-          margin: 0px 40px 20px 0px
-          vertical-align: middle
+  /* main content left -column */  
+  .left-column 
+    #photo-gal
+      #galleria
+        width: 700px
+        height: 500px
+        margin: 0px
+        padding: 0px
+        .galleria-stage
+          bottom: 97px
+        .galleria-carousel
+           height: 90px
+        .galleria-container
+          height: 87px
+          background-color: main_background_color
+        .galleria-counter
+          display: none !important
+        .galleria-thumbnails
+           .galleria-image
+            height: 87px 
+            width: 131px
+            padding-left: 2px
+            padding-right: 2px
+            &.active
+              border: 2px solid yellow_color
     
-  #pnc
-    #pnc-logo
-      margin-left: 15px
-      
+    #auction
+      ul
+        li
+          width: 24%
+          img
+             border-radius: 75px;
+          .auction-item
+            padding-left:  5px
+            padding-right: 5px
+          h4.auction-item-name
+            color: yellow_color
+          .auction-item-description
+            font-size: 75%
+            line-height: 120%
 
-  
-  #womans-board
-    ul.columns
-      text-align: left
-      color: main_text_color
-      columns: 400px 3
-      -webkit-columns:150px 3
-      -moz-columns:150px 3;
-      -webkit-column-gap:132px
-      -moz-column-gap:132px
-      column-gap:132px;
-      font-size: 13px 
-      
-      .past-chair:after
-        content: " * "
-        color: yellow_color
+    #support
+      ul  
+        li
+          width: 33%
 
-      li
-        display: block 
-        margin-bottom: 10px
-        .role 
-          text-transform: uppercase
+    #sponsors
+      padding: 40px 0px 40px 0px
+      p
+        font-style: italic
+        color: #9d96ac
+        font-size: 15px
+      .logos
+        div
+          display: inline-block
+
+          width: 24%
+          img
+            display: inline-block
+            margin: 0px 40px 20px 0px
+            vertical-align: middle
+
+    #pnc
+      #pnc-logo
+        margin-left: 15px
+
+  /* main content - right content */
+  .right-column
+    #womans-board
+      ul.columns
+        text-align: left
+        color: main_text_color
+        columns: 400px 3
+        -webkit-columns:150px 3
+        -moz-columns:150px 3;
+        -webkit-column-gap:132px
+        -moz-column-gap:132px
+        column-gap:132px;
+        font-size: 13px 
+        
+        .past-chair:after
+          content: " * "
           color: yellow_color
-          font-weight: bold
-          font-size: 13px
-          margin-top: 0px
+
+        li
+          display: block 
+          margin-bottom: 10px
+          .role 
+            text-transform: uppercase
+            color: yellow_color
+            font-weight: bold
+            font-size: 13px
+            margin-top: 0px
 
 
 .footer
