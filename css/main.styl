@@ -15,18 +15,18 @@ html,body
 body
   border-top: 2px solid yellow_color
 
-ul 
+ul
   margin: 0px 
   padding: 0px
   list-style: none
 
-li 
+li
   margin: 0px 
   padding: 0px
   display:inline-block 
   color: main_text_color
 
-a 
+a
   color: main_text_color
   text-decoration: none
 
@@ -34,7 +34,7 @@ a
 .left-column
   width: 70%
   float:left
-  
+
 .right-column
   float:right
   width: 20%
@@ -44,6 +44,7 @@ a
 
 .medium-vertical-margin
     margin-top: medium_vertical_margin
+
 
 #wrapper
   padding: 0px 150px
@@ -55,7 +56,10 @@ a
   position: relative
   height: 550px
   margin-bottom:150px
-  background: url(./images/cball-ader-building.png) no-repeat center
+  background-image: url(./images/cball-ader-building.png)
+  background-repeat: no-repeat
+  background-position: center
+  background-size: 100%
 
   img
     display: block
@@ -63,7 +67,8 @@ a
 
   img#logo
     padding-top: 125px
-
+    width: 100%
+    max-width: 500px
 
 #content
   max-width: 1000px 
@@ -161,13 +166,7 @@ a
       ul.columns
         text-align: left
         color: main_text_color
-        columns: 400px 3
-        -webkit-columns:150px 3
-        -moz-columns:150px 3;
-        -webkit-column-gap:132px
-        -moz-column-gap:132px
-        column-gap:132px;
-        font-size: 13px 
+        
         
         .past-chair:after
           content: " * "
@@ -186,12 +185,11 @@ a
   /* no-column */
   .no-column
     #sponsors
-      padding: 40px 0px 40px 0px
-      p
-        font-style: italic
-        color: #9d96ac
-        font-size: 15px
-      .logos
+      
+     
+      #logos
+        padding: 40px 0px 40px 0px
+        margin-bottom: 100px
         div
           display: inline-block
           width: 24%
@@ -204,14 +202,13 @@ a
       #pnc-logo
         margin-left: 15px
 
-
+   /* footer */     
   .footer
     margin-top: 125px
     width: 100%
     height: 150px
     position:relative
     z-index: 2
-
    .left-column-footer
      width: 600px
      float:left 
@@ -221,5 +218,88 @@ a
         margin: 0
         font-size: 18px
 
-    img#adler-wordmark-footer
-      width: 175px
+@media all and (min-width: 680px and max-width: 1000px)
+  .right-column
+    #womans-board
+      ul.columns
+        columns: 150px 3
+        -webkit-columns:  150px 3
+        -moz-columns:  150px 3
+        -webkit-column-gap: 50px
+        -moz-column-gap:  50px
+        column-gap: 50px
+        font-size: 10px 
+
+@media all and (max-width: 1000px)
+   body
+     text-align: center
+   #wrapper
+     padding:2em
+   #header
+     margin-bottom: 50px
+   .right-column
+     display:block
+     width:100%
+    li
+      display:block !important
+      width: 100% !important
+      margin-left  auto !important
+      margin-right auto !important
+
+    #content
+      section
+        margin-bottom: 25px
+      .left-column
+        display:block
+        width:100%
+        #support
+          li
+            display: block
+            margin-bottom: 5px
+        #auction
+          ul
+            li
+              margin-bottom: 10px
+              width 100%
+             img
+               display: block
+
+        #photo-gal
+          width: 100%
+          #galleria
+            width: 100%
+
+    .right-column
+      #womans-board
+        ul.columns
+          columns: 100px 2
+          -webkit-columns: 100px 2
+          -moz-columns: 100px 2
+          -webkit-column-gap: 50px
+          -moz-column-gap:  50px
+          column-gap: 50px
+          font-size: 10px 
+
+    .no-column
+      #sponsors
+        margin-bottom: 0
+        padding-bottom: 0
+        #logos
+          div
+            display:block !important
+            width: 100%
+            clear:both
+            margin-left: auto
+            margin-right: auto
+            margin-bottom: 10px
+            img
+              display:block
+          #pnc
+            #pnc-logo
+              margin-top: 10px
+      .footer
+        margin-top: 50px 
+      .left-column-footer
+        width: 100%
+        display:block
+
