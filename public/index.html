@@ -6,10 +6,6 @@
   <link rel="stylesheet" href="main.css" type="text/css">
   <link href='http://fonts.googleapis.com/css?family=Lato:300,400,900' rel='stylesheet' type='text/css'>
   <META NAME="ROBOTS" CONTENT="NOINDEX, NOARCHIVE">
-  <!--[if lt IE 9]>
-  	<script src="lib/html5shiv.js"></script>
-  	<link rel="stylesheet" type="text/css" href="/styles/leaflet.ie.css">
-  <![endif]-->
 </head>
 
 <body>
@@ -162,10 +158,19 @@
       <section id="sponsors">
         <h2 class="small-vertical-margin">Galaxy Sponsors</h2>
         <div class='logos'>
-          <img src='./images/logos/logoBoeing.png'></img>
-          <img src='./images/logos/logoUnited.png'></img>
-          <img src='./images/logos/logoSCElectric.png'></img>
-          <img src='./images/logos/logoChase.png'></img>
+          <div>
+            <img src='./images/logos/logoBoeing.png'></img>
+          </div>
+          <div>
+           <img src='./images/logos/logoUnited.png'></img>
+          </div>
+          <div>
+            <img src='./images/logos/logoSCElectric.png'></img>
+          </div>
+          <div>
+            <img src='./images/logos/logoChase.png'></img>
+          </div>
+          <div>
           <!--
           <img src='./images/logos/logoJPMorgan.png'></img>
           
@@ -177,26 +182,33 @@
       </section>
 
       <div id="pnc">
-        The Adler Planetarium is pleased to recognize <img src="http://placehold.it/100X50"></img>
-        represented by Scott C. Swanson, President, PNC Bank, Illinois. The Adler is grateful to PNC for their leadership and service as a generous partner in the museum&rsquo;s science, technology, engineering, and math (STEM) school&ndash;readiness programs for at&ndash;risk young people.
-
+        <span id="pnc-intro">The Adler Planetarium is pleased to recognize</span> 
+          <img id="pnc-logo" src="http://placehold.it/100X25"></img>
+        <p>
+          represented by Scott C. Swanson, President, PNC Bank, Illinois. The Adler is grateful to PNC for their leadership and service as a generous partner in the museum&rsquo;s science, technology, engineering, and math (STEM) school&ndash;readiness programs for at&ndash;risk young people.
+          </p>
       </div>
     </div>
     
   
     <div class="footer">
-      <div class="left-column">
-        <p>
-         To learn more, please contact Livia Kenney at 312.553.2000, <a href='mailto:lkenney@pjhchicago.com'>lkenney@pjhchicago.com</a>, or visit <a href="http://www.pjhchicago.com/event/adler" target="_blank">www.pjhchicago.com/adler</a>
-        </p>
-      </div>
+      <div class="left-column-footer">
+        <div id="contact">
+          <p>
+            To learn more, please contact Livia Kenney at 312.553.2000,
+          </p>
+          <p>
+            <a href='mailto:lkenney@pjhchicago.com'>lkenney@pjhchicago.com</a>, or visit <a href="http://www.pjhchicago.com/event/adler" target="_blank">www.pjhchicago.com/adler</a>
+          </p>
+        </div>
+      </div>  
       <div class="right-column">
-        <img src='images/adlerLogo.png'></img>
+        <img id="adler-wordmark-footer" src='images/adler-wordmark-footer-white.png'></img>
       </div>
     </div>
  
   </div><!--content container -->
-  <script type="text/javascript" src="lib/leaflet-src.js"></script>
+  
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
   <script>
     if (!window.jQuery) {
@@ -205,6 +217,7 @@
   </script>
   <script type="text/javascript" src="lib/galleria-1.2.9.min.js"></script>
   <script type="text/javascript" src="main.js"></script>
+
 </body>
 </html>
 

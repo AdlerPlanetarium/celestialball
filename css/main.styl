@@ -8,9 +8,6 @@ border_color = #5E5871
 
 medium_vertical_margin = 4.1em
 
-.cash
-  color: yellow_color
-
 html,body
   border-top: 2px solid yellow_color;
   background-color: main_background_color 
@@ -36,7 +33,6 @@ a
   text-decoration: none
 
 
-
 .left-column
   width: 700px
   float:left
@@ -45,6 +41,9 @@ a
   float:right
   width: 200px
 
+.no-column
+    clear:both
+  
 #header
   /*width: 100% 
   margin: auto*/
@@ -70,9 +69,9 @@ a
   margin:  auto 
   position:relative
 
-  .no-column
-    clear:both
-
+  .cash
+    color: yellow_color    
+  
   section
     box-sizing: border-box 
     /* padding: 60px 85px 60px 85px*/
@@ -152,11 +151,17 @@ a
       font-style: italic
       color: #9d96ac
       font-size: 15px
-    img 
-      display: inline-block
-      margin: 0px 40px 20px 0px
-      vertical-align: middle
-      
+    .logos
+      div
+        display: inline-block
+
+        width: 24%
+        img
+          display: inline-block 
+          margin: 0px 40px 20px 0px  
+          vertical-align: middle
+          
+
   #auction
     ul
       li
@@ -168,6 +173,11 @@ a
     ul  
       li
         width: 30%
+  
+  #pnc
+    #pnc-logo
+      margin-left: 15px
+      
 
   #general_info
     padding: 60px 0px 60px 0px 
@@ -194,13 +204,25 @@ a
     padding-left: 0px 
     padding-right: 0px
 
+
 .footer
   margin-top: 125px
   width: 100%
   height: 150px 
   position:relative 
   z-index: 2
- 
+
+ .left-column-footer
+   width: 600px
+   float:left 
+
+   #contact
+    p
+      margin: 0
+      font-size: 18px
+
+  img#adler-wordmark-footer
+    width: 175px;
 
   .inner 
     width: 830px
@@ -238,7 +260,7 @@ a
       height: 87px 
       width: 131px
       padding-left: 2px
-      padding-tightt: 2px
+      padding-right: 2px
       &.active
         border: 2px solid yellow_color
   
