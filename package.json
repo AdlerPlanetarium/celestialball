@@ -11,6 +11,6 @@
   "scripts": {
     "start": "haw serve --port 2014",
     "deploy-to-staging": "haw build ./build --force && publisssh ./build test-celestialball.adlerplanetarium.org && rm -rf ./build",
-    "deploy-to-production": "haw build ./build --force && publisssh ./build celestialball.adlerplanetarium.org/2014 && rm -rf ./build"
+    "deploy-to-production": "haw build ./build --force && publisssh ./build celestialball.adlerplanetarium.org && rm -rf ./build"
   }
 }
