@@ -201,8 +201,8 @@ a
 
     #pnc
       #pnc-logo
-        margin-left: 15px
-
+        vertical-align middle
+     
    /* footer */     
   .footer
     margin-top: 75px
@@ -219,18 +219,6 @@ a
         margin: 0
         font-size: 18px
 
-@media all and (min-width: 680px and max-width: 1000px)
-  .right-column
-    #womans-board
-      ul.columns
-        columns: 150px 3
-        -webkit-columns:  150px 3
-        -moz-columns:  150px 3
-        -webkit-column-gap: 50px
-        -moz-column-gap:  50px
-        column-gap: 50px
-        font-size: 10px 
-
 @media all and (max-width: 1000px)
    body
      text-align: center
@@ -246,7 +234,7 @@ a
      width:100%
     li
       display:block !important
-      width: 100% !important
+      width: 100% 
       margin-left  auto !important
       margin-right auto !important
 
@@ -265,45 +253,68 @@ a
             li
               margin-bottom: 10px
               width 100%
-             img
-               display: block
-
+            
         #photo-gal
           width: 100%
           #galleria
             width: 100%
 
+      .right-column
+        #womans-board
+          ul.columns
+            columns: 100px 2
+            -webkit-columns: 100px 2
+            -moz-columns: 100px 2
+            -webkit-column-gap: 50px
+            -moz-column-gap:  50px
+            column-gap: 50px
+            font-size: 10px 
+
+      .no-column
+        #sponsors
+          margin-bottom: 0
+          padding-bottom: 0
+          #logos
+            div
+              display:block !important
+              width: 100%
+              clear:both
+              margin-left: auto
+              margin-right: auto
+              margin-bottom: 10px
+              img
+                display:block
+            #pnc
+              #pnc-logo
+                padding-top:30px
+      .footer
+        #adler-wordmark-footer
+          max-width: 100%
+          margin: 20px 0 
+       .left-column-footer
+          width: 100%
+          display:block
+
+
+@media all and (min-width: 680px) and (max-width: 1000px)
+  #content
+    .left-column
+      #auction
+        ul
+          li
+            display: inline-block   !important
+            width: 40%  !important
     .right-column
       #womans-board
         ul.columns
-          columns: 100px 2
-          -webkit-columns: 100px 2
-          -moz-columns: 100px 2
+          columns: 150px 3
+          -webkit-columns:  150px 3
+          -moz-columns:  150px 3
           -webkit-column-gap: 50px
           -moz-column-gap:  50px
           column-gap: 50px
-          font-size: 10px 
-
-    .no-column
-      #sponsors
-        margin-bottom: 0
-        padding-bottom: 0
-        #logos
-          div
-            display:block !important
-            width: 100%
-            clear:both
-            margin-left: auto
-            margin-right: auto
-            margin-bottom: 10px
-            img
-              display:block
-          #pnc
-            #pnc-logo
-              margin-top: 10px
-    .footer
-      #adler-wordmark-footer
-        margin-top: 20px 
-   .left-column-footer
-      width: 100%
-      display:block
+          font-size: 10px
+      .no-column    
+        .footer
+          #adler-wordmark-footer
+            max-width: 100%
