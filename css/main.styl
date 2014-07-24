@@ -6,6 +6,9 @@ yellow_color= #D2BE02
 
 medium_vertical_margin = 4.1em
 
+div
+  border: 1px solid blue
+
 html,body
   background-color: main_background_color 
   color: main_text_color
@@ -39,7 +42,7 @@ a
   float:right
   width: 20%
 
-.no-column
+.no-column  
     clear:both
 
 .medium-vertical-margin
@@ -47,7 +50,7 @@ a
 
 
 #wrapper
-  padding: 0px 150px
+  padding: 4px  150px 0px
 
 #header
   max-width: 1000px
@@ -55,7 +58,7 @@ a
   margin-right: auto
   position: relative
   height: 550px
-  margin-bottom:150px
+  margin-bottom:50px
   background-image: url(./images/cball-ader-building.png)
   background-repeat: no-repeat
   background-position: center
@@ -118,7 +121,7 @@ a
   .left-column 
     #photo-gal
       #galleria
-        width: 700px
+        width: 90%
         height: 500px
         margin: 0px
         padding: 0px
@@ -163,6 +166,7 @@ a
   /* main content - right content */
   .right-column
     #womans-board
+      margin-bottom: 0px
       ul.columns
         text-align: left
         color: main_text_color
@@ -185,14 +189,14 @@ a
   /* no-column */
   .no-column
     #sponsors
-      
-     
       #logos
         padding: 40px 0px 40px 0px
-        margin-bottom: 100px
+        margin-bottom: 50px
         div
+          box-sizing: padding-box
           display: inline-block
-          width: 24%
+          width: 20%
+          margin-right: 40px
           img
             display: inline-block
             margin: 0px 40px 20px 0px
@@ -204,7 +208,7 @@ a
 
    /* footer */     
   .footer
-    margin-top: 125px
+    margin-top: 75px
     width: 100%
     height: 150px
     position:relative
@@ -236,7 +240,10 @@ a
    #wrapper
      padding:2em
    #header
-     margin-bottom: 50px
+     height: 275px
+     margin-bottom: 0px
+     img#logo
+       padding-top: 29px
    .right-column
      display:block
      width:100%
@@ -297,9 +304,9 @@ a
           #pnc
             #pnc-logo
               margin-top: 10px
-      .footer
-        margin-top: 50px 
-      .left-column-footer
-        width: 100%
-        display:block
-
+    .footer
+      #adler-wordmark-footer
+        margin-top: 20px 
+   .left-column-footer
+      width: 100%
+      display:block
