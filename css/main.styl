@@ -228,6 +228,34 @@ a
         margin: 0
         font-size: 18px
 
+@media all and (min-width: 680px) and (max-width: 1230px)
+  #content
+    .left-column
+      #auction
+        ul
+          li
+            display: inline-block   !important
+            width: 40%  !important
+            margin-bottom: 25px
+            margin-right: 60px
+
+@media all and (min-width: 680px) and (max-width: 1000px)
+  #content
+    .right-column
+      #womans-board
+        ul.columns
+          columns: 150px 3
+          -webkit-columns:  150px 3
+          -moz-columns:  150px 3
+          -webkit-column-gap: 50px
+          -moz-column-gap:  50px
+          column-gap: 50px
+          font-size: 10px
+      .no-column    
+        .footer
+          #adler-wordmark-footer
+            max-width: 100%
+
 @media all and (max-width: 1000px)
    body
      text-align: center
@@ -303,31 +331,3 @@ a
        .left-column-footer
           width: 100%
           display:block
-
-@media all and (min-width: 680px) and (max-width: 1230px)
-  #content
-    .left-column
-      #auction
-        ul
-          li
-            display: inline-block   !important
-            width: 40%  !important
-            margin-bottom: 25px
-            margin-right: 60px
-
-@media all and (min-width: 680px) and (max-width: 1000px)
-  #content
-    .right-column
-      #womans-board
-        ul.columns
-          columns: 150px 3
-          -webkit-columns:  150px 3
-          -moz-columns:  150px 3
-          -webkit-column-gap: 50px
-          -moz-column-gap:  50px
-          column-gap: 50px
-          font-size: 10px
-      .no-column    
-        .footer
-          #adler-wordmark-footer
-            max-width: 100%
