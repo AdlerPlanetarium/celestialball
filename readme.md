@@ -48,7 +48,17 @@ Your Amazon key will need to be set up for command line tools
 key: process.env.ADLER_AWS_ACCESS_KEY_ID
 secret: process.env.ADLER_AWS_SECRET_ACCESS_KEY
 
-## Procedures
+## Maintenance Notes
+
+### To images to the Galleria carousel
+1. Add the file to public/images/2013/pics.
+2. Add code to the script file app/main.coffee like this.
+   {
+      "image": "images/2013Pics/NEWIMAGENAME.jpg"
+    },
+Note the last image in the list denoted by braces should not have a comma after closing brackets.
+
+## Deployment Procedures
 #### To run development server locally (port 2014)
 	npm start
 
@@ -59,4 +69,7 @@ secret: process.env.ADLER_AWS_SECRET_ACCESS_KEY
 
 #### To deploy to the test site
 	 npm run deploy-to-staging
+#### To deploy to production
+	 npm run deploy-to-production
+	 
 	
