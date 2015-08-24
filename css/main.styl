@@ -145,26 +145,46 @@ a
             &.active
               border: 2px solid yellow_color
 
+    .auction-items-list
+      display: flex
+      flex-wrap: wrap
+
+      .auction-item
+        box-sizing: border-box
+        padding: 1em 0.6em
+        width: 25%
+
+        img
+          border-radius: 50%
+          max-width: 100%
+
+      .auction-item-name
+        color: yellow_color
+
+      .auction-item-description
+        font-size: 0.8em
+        line-height: 1.4em
+
     #auction
-      #auction-intro
-        margin-bottom: 2em
-      ul
-        li
-          vertical-align: top
-          width: 150px
-          margin-right: 20px
-          img
-             border-radius: 75px
-             max-width: 100%
-          .auction-item-description
-            padding-right: 10px
-          h4.auction-item-name
-            color: yellow_color
-          #apollo-13
-            width: 75%
-          .auction-item-description
-            font-size: 75%
-            line-height: 120%
+      // #auction-intro
+      //   margin-bottom: 2em
+      // ul
+      //   li
+      //     vertical-align: top
+      //     width: 150px
+      //     margin-right: 20px
+      //     img
+      //        border-radius: 75px
+      //        max-width: 100%
+      //     .auction-item-description
+      //       padding-right: 10px
+      //     h4.auction-item-name
+      //       color: yellow_color
+      //     #apollo-13
+      //       width: 75%
+      //     .auction-item-description
+      //       font-size: 75%
+      //       line-height: 120%
 
     #support
       ul
