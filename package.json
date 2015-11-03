@@ -1,16 +1,14 @@
 {
+  "name": "adler-planetarium-celestial-ball",
   "author": "Adler Web Team",
-  "name": "CelestialBall",
-  "description": "",
-  "version": "0.0.2",
+  "version": "0.1.0",
   "dependencies": {
-    "nib": "*",   
-    "publisssh":  "^0.2.5",
-    "haw": "0.4.9"
+    "haw": "0.5.0",
+    "publisssh":  "^1.0.0"
   },
   "scripts": {
-    "start": "haw serve --port 2014",
-    "deploy-to-staging": "haw build ./build --force && publisssh ./build test-celestialball.adlerplanetarium.org && rm -rf ./build",
-    "deploy-to-production": "haw build ./build --force && publisssh ./build celestialball.adlerplanetarium.org && rm -rf ./build"
+    "start": "haw serve",
+    "deploy-to-staging": "haw build ./build && publisssh ./build test-celestialball.adlerplanetarium.org -k ${ADLER_AWS_ACCESS_KEY_ID} -s ${ADLER_AWS_SECRET_ACCESS_KEY} && rm -rf ./build",
+    "deploy-to-production": "haw build ./build && publisssh ./build celestialball.adlerplanetarium.org -k ${ADLER_AWS_ACCESS_KEY_ID} -s ${ADLER_AWS_SECRET_ACCESS_KEY} && rm -rf ./build"
   }
 }

@@ -1,6 +1,4 @@
-
 # Celestial Ball 
-
 Documentation about the Celestial Ball micro-site
 
 ## Overview
@@ -10,7 +8,7 @@ A microsite for the Celestial Ball charity event. It's a typical Adler mircosite
 - It's hosted on a Amazon S3 bucket
 - Soucecode and issue log on Github
 - A sub-domain on adlerplanetarium.org is pointed at this bucket
-	
+
 	**URL** [http://celestialball.adlerplanetarium.org](celestialball.adlerplanetarium.org)
 
 ## Where does stuff live?
@@ -21,7 +19,7 @@ A microsite for the Celestial Ball charity event. It's a typical Adler mircosite
 [https://github.com/AdlerPlanetarium/celestialbal](https://github.com/AdlerPlanetarium/celestialball)
 
 		Git clone git@github.com:AdlerPlanetarium/celestialball.git)
-		
+
 ## What
 
 ### Libraries and Tech
@@ -30,7 +28,7 @@ A microsite for the Celestial Ball charity event. It's a typical Adler mircosite
 - **Coffescript**
 - **Stylus**
 - **jQuery**
-- Leaflet 
+- Leaflet
 
 ### File layout
 Where $ is the root of the repository files
@@ -43,7 +41,6 @@ Where $ is the root of the repository files
 
 
 ## Credentials
-
 Your Amazon key will need to be set up for command line tools
 key: process.env.ADLER_AWS_ACCESS_KEY_ID
 secret: process.env.ADLER_AWS_SECRET_ACCESS_KEY
@@ -59,11 +56,10 @@ secret: process.env.ADLER_AWS_SECRET_ACCESS_KEY
 Note the last image in the list denoted by braces should not have a comma after closing brackets.
 
 ## Deployment Procedures
-#### To run development server locally (port 2014)
+#### To run development server locally
 	npm start
 
 #### To initialize project
-
 	npm install .
 
 
@@ -71,5 +67,3 @@ Note the last image in the list denoted by braces should not have a comma after 
 	 npm run deploy-to-staging
 #### To deploy to production
 	 npm run deploy-to-production
-	 
-	
